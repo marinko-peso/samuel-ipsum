@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/marinko-peso/samuel-ipsum.git"
   },
+  "bin": {
+    "samuel-ipsum": "cli.js",
+    "slipsum": "cli.js"
+  },
   "keywords": [
     "placeholder",
     "lorem",
@@ -22,5 +26,13 @@
   "bugs": {
     "url": "https://github.com/marinko-peso/samuel-ipsum/issues"
   },
-  "homepage": "https://github.com/marinko-peso/samuel-ipsum#readme"
+  "homepage": "https://github.com/marinko-peso/samuel-ipsum#readme",
+  "devDependencies": {
+    "got": "^8.3.1",
+    "minimist": "^1.2.0"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "hr": "^0.1.3"
+  }
 }
