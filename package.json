@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/marinko-peso/samuel-ipsum#readme",
   "devDependencies": {
-    "got": "^8.3.1",
-    "minimist": "^1.2.0"
+    "got": "^8.3.1"
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "hr": "^0.1.3"
+    "hr": "^0.1.3",
+    "minimist": "^1.2.0"
   }
 }
