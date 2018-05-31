@@ -18,7 +18,6 @@ async function fetchQuotes(url) {
   const lines = code.split(/\r?\n/);
   const data = { ipsums: [], slips: [] };
   return lines.reduce((acc, line) => {
-    debugger;
     const [, ipsum] = exec(line, reIpsum);
     if (ipsum) {
       acc.ipsums.push(ipsum);
