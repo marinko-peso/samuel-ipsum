@@ -1,0 +1,26 @@
+{
+  "name": "samuel-ipsum",
+  "version": "0.0.0",
+  "description": "Generate placeholder text from Samuel L. Jackson quotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinko-peso/samuel-ipsum.git"
+  },
+  "keywords": [
+    "placeholder",
+    "lorem",
+    "ipsum",
+    "samuel",
+    "jackon"
+  ],
+  "author": "Marinko Peso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marinko-peso/samuel-ipsum/issues"
+  },
+  "homepage": "https://github.com/marinko-peso/samuel-ipsum#readme"
+}
