@@ -3,16 +3,38 @@
 
 const chalk = require('chalk');
 const { hr: printLine } = require('hr');
+const meow = require('meow');
 const path = require('path');
-const argv = require('minimist')(process.argv.slice(2));
-
 const { generateParagraphs, generateHeader } = require('./index');
 
-const defaults = {
-  type: 'paragraph',
-  number: 1
+const help = `
+Usage
+  $  samuel-ipsum <options>
+
+Options
+  --type, -t    Chose between "paragraph" and "header"
+  --number, -n  Number of paragraphs to output (default=1)
+
+Examples
+  $ samuel-ipsum --type=paragraph -n 2
+  $ samuel-ipsum --type=header`;
+
+const flags = {
+  help: { alias: 'h' },
+  version: { alias: 'v' },
+  number: {
+    type: 'number',
+    alias: 'n',
+    default: 1
+  },
+  type: {
+    type: 'string',
+    alias: 't',
+    default: 'paragraph'
+  }
 };
-const options = Object.assign({}, defaults, argv);
+
+const { flags: options } = meow(help, { flags });
 const commandName = path.basename(process.argv[1]);
 const params = process.argv.slice(2).join(' ');
 
