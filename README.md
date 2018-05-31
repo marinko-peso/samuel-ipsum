@@ -1,7 +1,7 @@
 # Samuel Ipsum
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![license](https://img.shields.io/github/license/marinko-peso/shamus.svg)](https://github.com/marinko-peso/shamus/blob/master/LICENSE)
-![package version](https://img.shields.io/npm/v/samuel-ipsum.svg)
+[![package version](https://img.shields.io/npm/v/samuel-ipsum.svg)](https://npm.im/samuel-ipsum)
 
 Generate placeholder text from Samuel L. Jackson quotes.
 
