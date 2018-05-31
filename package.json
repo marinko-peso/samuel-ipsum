@@ -1,6 +1,6 @@
 {
   "name": "samuel-ipsum",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate placeholder text from Samuel L. Jackson quotes",
   "main": "index.js",
   "scripts": {},
