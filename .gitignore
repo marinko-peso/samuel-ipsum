@@ -62,3 +62,6 @@ typings/
 
 # editor specific
 .idea
+
+# quotes database
+quotes.json
