@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
+    "pretest": "npm run fetch-quotes",
     "test": "jest",
     "fetch-quotes": "node scripts/fetch-quotes.js > quotes.json",
     "prepublish": "npm run fetch-quotes"
