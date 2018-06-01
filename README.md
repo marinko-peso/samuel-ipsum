@@ -8,7 +8,7 @@ Generate placeholder text from Samuel L. Jackson quotes.
 ## Install
 
 ```sh
-npm install samuel-ipsum
+npm i samuel-ipsum
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ npx samuel-ipsum
 ## What does the duckie say?
 
 ```sh
-samuel-ipsum --type=header | npx -q duckiesay
+npx samuel-ipsum --type=header | npx -q duckiesay
 ```
 ```
  __________________

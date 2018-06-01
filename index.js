@@ -9,7 +9,7 @@ function generateParagraphs(n = 1) {
   return Array.from({ length: n }, (value, index, arr) => {
     let ipsum;
     do {
-      ipsum = random(ipsums)
+      ipsum = random(ipsums);
     } while (ipsum === prev);
     prev = ipsum;
     return ipsum;
