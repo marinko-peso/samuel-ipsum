@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "generate": "node scripts/fetch-quotes.js > quotes.json"
+    "fetch-quotes": "node scripts/fetch-quotes.js > quotes.json",
+    "prepublish": "npm run fetch-quotes"
   },
   "repository": {
     "type": "git",
