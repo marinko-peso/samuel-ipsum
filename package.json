@@ -10,6 +10,9 @@
     "fetch-quotes": "node scripts/fetch-quotes.js > quotes.json",
     "prepublish": "npm run fetch-quotes"
   },
+  "config": {
+    "quotesUrl": "http://slipsum.com/js/slipsum.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marinko-peso/samuel-ipsum.git"
