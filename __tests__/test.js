@@ -1,4 +1,6 @@
-const { generateParagraphs, generateHeader } = require('./../index');
+'use strict';
+
+const { generateParagraphs, generateHeader } = require('../');
 
 describe('generating paragraphs', () => {
   it('should be in the right format', () => {
