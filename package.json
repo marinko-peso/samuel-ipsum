@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
+    "pretest": "npm run fetch-quotes",
     "test": "jest",
-    "generate": "node scripts/fetch-quotes.js > quotes.json"
+    "fetch-quotes": "node scripts/fetch-quotes.js > quotes.json",
+    "prepublish": "npm run fetch-quotes"
+  },
+  "config": {
+    "quotesUrl": "http://slipsum.com/js/slipsum.js"
   },
   "repository": {
     "type": "git",
@@ -44,5 +49,10 @@
     "chalk": "^2.4.1",
     "hr": "^0.1.3",
     "meow": "^5.0.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "quotes.json"
+  ]
 }
