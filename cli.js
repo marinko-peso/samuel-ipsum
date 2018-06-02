@@ -2,7 +2,7 @@
 'use strict';
 
 const { basename } = require('path');
-const { generateParagraphs, generateHeader } = require('./');
+const { generateParagraphs, generateHeader, Mode } = require('./');
 const { hr } = require('hr');
 const chalk = require('chalk');
 const meow = require('meow');
@@ -14,8 +14,10 @@ Usage
   $  samuel-ipsum <options>
 
 Options
-  --type, -t    Chose between "paragraph" and "header"
+  --type, -t    Choose between "paragraph" and "header"
   --number, -n  Number of paragraphs to output (default=1)
+  --mode, -m    Choose between "regular" (offensive) or "lite" output
+                (default="regular")
 
 Examples
   $ samuel-ipsum --type=paragraph -n 2
@@ -29,6 +31,11 @@ const flags = {
     alias: 'n',
     default: 1
   },
+  mode: {
+    type: 'string',
+    alias: 'm',
+    default: Mode.Regular
+  },
   type: {
     type: 'string',
     alias: 't',
@@ -39,12 +46,12 @@ const flags = {
 const { flags: options } = meow(help, { flags });
 
 if (options.type === 'paragraph') {
-  console.log(generateParagraphs(options.number).join('\n\n'));
+  console.log(generateParagraphs(options.number, options.mode).join('\n\n'));
   printFooter();
   process.exit();
 }
 
-console.log(generateHeader());
+console.log(generateHeader(options.mode));
 printFooter();
 
 function printFooter(argv = parse(process.argv)) {
