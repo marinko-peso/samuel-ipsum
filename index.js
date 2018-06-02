@@ -1,26 +1,31 @@
 'use strict';
 
-const { ipsums, slips } = require('./quotes.json');
+const quotes = require('./quotes.json');
 
 const random = arr => arr[getRandomInt(0, arr.length)];
 
-function generateParagraphs(n = 1) {
+const Mode = {
+  Regular: 'regular',
+  Lite: 'lite'
+};
+
+function generateParagraphs(n = 1, mode = Mode.Regular) {
   let prev = null;
   return Array.from({ length: n }, (value, index, arr) => {
     let ipsum;
     do {
-      ipsum = random(ipsums);
+      ipsum = random(quotes[mode].ipsums);
     } while (ipsum === prev);
     prev = ipsum;
     return ipsum;
   });
 }
 
-function generateHeader() {
-  return random(slips);
+function generateHeader(mode = Mode.Regular) {
+  return random(quotes[mode].slips);
 }
 
-module.exports = { generateParagraphs, generateHeader };
+module.exports = { generateParagraphs, generateHeader, Mode };
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);

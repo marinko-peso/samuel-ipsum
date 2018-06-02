@@ -11,7 +11,10 @@
     "prepublish": "npm run fetch-quotes"
   },
   "config": {
-    "quotesUrl": "http://slipsum.com/js/slipsum.js"
+    "quotes": {
+      "regular": "http://slipsum.com/js/slipsum.js",
+      "lite": "http://slipsum.com/js/slipsum_lite.js"
+    }
   },
   "repository": {
     "type": "git",

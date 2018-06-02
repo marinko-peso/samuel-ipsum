@@ -1,11 +1,17 @@
 'use strict';
 
-const { generateParagraphs, generateHeader } = require('../');
+const { generateParagraphs, generateHeader, Mode } = require('../');
+const quotes = require('../quotes.json');
 
 describe('generating paragraphs', () => {
   it('should be in the right format', () => {
     const paragraphs = generateParagraphs(4);
     expect(paragraphs.constructor).toBe(Array);
+  });
+
+  it('should support lite mode', () => {
+    const [paragraph] = generateParagraphs(1, Mode.Lite);
+    expect(quotes[Mode.Lite].ipsums.includes(paragraph)).toBeTruthy();
   });
 
   it('should generate appropriate number', () => {
@@ -26,5 +32,10 @@ describe('generating paragraphs', () => {
 describe('generating header', () => {
   it('should be in the right format', () => {
     expect(generateHeader().constructor).toBe(String);
+  });
+
+  it('should support lite mode', () => {
+    const header = generateHeader(Mode.Lite);
+    expect(quotes[Mode.Lite].slips.includes(header)).toBeTruthy();
   });
 });
