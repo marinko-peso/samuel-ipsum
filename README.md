@@ -35,10 +35,9 @@ Pipe to pbcopy if you want to copy to clipboard: samuel-ipsum --number=2 --type=
 ```
 
 Options:
-  --type, -t    Choose between "paragraph" and "header"
-  --number, -n  Number of paragraphs to output (default=1)
-  --mode, -m    Choose between "regular" (offensive) or "lite" output
-                (default="regular")
+-  --type, -t    Choose between "paragraph" and "header"
+-  --number, -n  Number of paragraphs to output (default=1)
+-  --mode, -m    Choose between "regular" (offensive) or "lite" output (default="regular")
 
 More details can be found with --help.
 
