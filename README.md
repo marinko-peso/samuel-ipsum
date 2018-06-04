@@ -35,12 +35,12 @@ Pipe to pbcopy if you want to copy to clipboard: samuel-ipsum --number=2 --type=
 ```
 
 Options:
-- t (or type) [paragraph, header]
-- n (or number) [integer] (only applies to paragraph)
+  --type, -t    Choose between "paragraph" and "header"
+  --number, -n  Number of paragraphs to output (default=1)
+  --mode, -m    Choose between "regular" (offensive) or "lite" output
+                (default="regular")
 
 More details can be found with --help.
-
-Available also as ```slipsum```
 
 Don't forget:
 ```
