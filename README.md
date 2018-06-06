@@ -3,6 +3,7 @@
 [![license](https://img.shields.io/github/license/marinko-peso/shamus.svg)](https://github.com/marinko-peso/shamus/blob/master/LICENSE)
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 [![package version](https://img.shields.io/npm/v/samuel-ipsum.svg)](https://npm.im/samuel-ipsum)
+[![install size](https://packagephobia.now.sh/badge?p=samuel-ipsum)](https://packagephobia.now.sh/result?p=samuel-ipsum)
 
 Generate placeholder text from Samuel L. Jackson quotes.
 
