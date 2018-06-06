@@ -65,3 +65,7 @@ typings/
 
 # quotes database
 quotes.json
+
+# dist builds
+dist/*
+!dist/.gitkeep

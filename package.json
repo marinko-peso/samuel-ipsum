@@ -2,13 +2,16 @@
   "name": "samuel-ipsum",
   "version": "1.0.7",
   "description": "Generate placeholder text from Samuel L. Jackson quotes",
-  "main": "index.js",
+  "main": "dist/samuel-ipsum.min.js",
+  "module": "dist/samuel-ipsum.es.js",
   "scripts": {
     "lint": "eslint .",
-    "pretest": "npm run fetch-quotes",
-    "test": "jest",
+    "clean:dist": "del-cli dist/* !dist/.gitkeep",
+    "build": "npm run clean:dist && bili",
     "fetch-quotes": "node scripts/fetch-quotes.js > quotes.json",
-    "prepublish": "npm run fetch-quotes"
+    "pretest": "npm run fetch-quotes && npm run build",
+    "test": "jest",
+    "prepublish": "npm run fetch-quotes && npm run build"
   },
   "config": {
     "quotes": {
@@ -38,6 +41,8 @@
   },
   "homepage": "https://github.com/marinko-peso/samuel-ipsum#readme",
   "devDependencies": {
+    "bili": "^3.1.2",
+    "del-cli": "^1.1.0",
     "eslint": "^4.19.1",
     "eslint-config-semistandard": "^12.0.1",
     "eslint-config-standard": "^11.0.0",

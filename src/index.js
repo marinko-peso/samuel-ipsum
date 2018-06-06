@@ -1,6 +1,6 @@
 'use strict';
 
-const quotes = require('./quotes.json');
+const quotes = require('../quotes.json');
 
 const random = arr => arr[getRandomInt(0, arr.length)];
 

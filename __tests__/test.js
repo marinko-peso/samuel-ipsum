@@ -1,6 +1,6 @@
 'use strict';
 
-const { generateParagraphs, generateHeader, Mode } = require('../');
+const { generateParagraphs, generateHeader, Mode } = require('../dist/samuel-ipsum.min');
 const quotes = require('../quotes.json');
 
 describe('generating paragraphs', () => {
