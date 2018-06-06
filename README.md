@@ -10,17 +10,18 @@ Generate placeholder text from Samuel L. Jackson quotes.
 ## Install
 
 ```sh
-npm i samuel-ipsum
+npm i -g samuel-ipsum
 ```
 
 ## Usage
 
 In code:
 ```js
-import { generateParagraphs, generateHeader } from 'samuel-ipsum'
+import { generateParagraphs, generateHeader, Mode } from 'samuel-ipsum'
 
-generateParagraphs(3);      // returns array with requested number of paragraphs
-generateHeader();           // returns single header string
+generateParagraphs(3);              // returns array with requested number of paragraphs
+generateHeader();                   // returns single header string
+generateParagraphs(2, Mode.Lite);   // lite mode (Mode.Regular is by default)
 ```
 
 In terminal:
@@ -50,7 +51,7 @@ npx samuel-ipsum
 ## What does the duckie say?
 
 ```sh
-npx samuel-ipsum --type=header | npx -q duckiesay
+npx samuel-ipsum --t header | npx -q duckiesay
 ```
 ```
  __________________
