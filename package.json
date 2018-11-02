@@ -15,8 +15,8 @@
   },
   "config": {
     "quotes": {
-      "regular": "http://slipsum.com/js/slipsum.js",
-      "lite": "http://slipsum.com/js/slipsum_lite.js"
+      "regular": "https://slipsum.com/wp-content/themes/15zine/js/slipsum.js",
+      "lite": "https://slipsum.com/wp-content/themes/15zine/js/slipsum_lite.js"
     }
   },
   "repository": {
