@@ -51,7 +51,8 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "got": "^8.3.1",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "merge": ">=1.2.1"
   },
   "dependencies": {
     "chalk": "^2.4.1",
